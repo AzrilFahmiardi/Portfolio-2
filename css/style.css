@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -12,6 +13,17 @@ body {
 .nav-container {
   display: flex;
   justify-content: flex-start;
+  padding-top: 15px;
+}
+
+.nav-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  flex: 1.8;
 }
 
 .logo {
@@ -19,8 +31,6 @@ body {
   font-size: 1.8rem;
   color: #ffffff;
   margin-top: 30px;
-  margin-left: 200px;
-  margin-right: 360px;
 }
 
 #greenlogo {
@@ -30,13 +40,129 @@ body {
 .nav-list ul a {
   font-family: Poppins;
   font-weight: 200;
+  font-size: 0.8rem;
   text-decoration: none;
-  color: rgba(241, 234, 255, 0.7);
+  color: #ffffff;
   margin-right: 50px;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.1rem;
+}
+
+.nav-list ul a:hover {
+  text-shadow: 0 0 10px #76abae;
+  color: #76abae;
 }
 
 .nav-list ul li {
   list-style: none;
   margin-top: 35px;
+  margin-left: 100px;
+}
+
+#profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 670px;
+}
+
+.profile-desc {
+  position: relative;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 20%;
+}
+
+.profile-img {
+  height: fit-content;
+  width: 56%;
+}
+
+.profile-img img {
+  width: 800px;
+  margin-top: 30px;
+}
+
+.profile-desc .title {
+  color: #ffffff;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  padding-left: 20px;
+  border-left: 3px solid #76abae;
+  margin-bottom: 60px;
+  font-size: 1.5rem;
+}
+
+.profile-desc #name {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.19rem;
+  margin-bottom: 30px;
+  text-shadow: 10px 10px 20px #76abae;
+}
+
+.profile-desc .text {
+  color: rgba(241, 234, 255, 0.5);
+  font-family: Poppins;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}
+
+.profile-desc .profile-button button {
+  position: relative;
+  top: 40px;
+  left: 10px;
+
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 1rem;
+
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.profile-desc .profile-button .contact-me {
+  background-color: #76abae;
+  border-radius: 15px;
+  border: 1px solid #76abae;
+  letter-spacing: 0.08rem;
+  padding: 10px 20px;
+  height: 3rem;
+
+  font-weight: 600;
+  transition: 0.1s ease-in;
+}
+
+.profile-desc .profile-button .contact-me:hover {
+  color: #76abae;
+  background-color: #ffffff;
+  border: 1px solid #76abae;
+}
+
+.profile-desc .profile-button .download-cv {
+  background-color: #242528;
+  border: 0;
+  letter-spacing: 0.1rem;
+  padding: 0 0 4px 0;
+  border-bottom: 3px solid #910a67;
+  line-height: 20px;
+  font-weight: 500;
+}
+.profile-desc .profile-button .download-cv::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -3px;
+  background-color: #ffd369;
+  transition: width 0.2s ease-in-out, left 0.3s ease-in-out;
+}
+.profile-desc .profile-button .download-cv:hover::before {
+  width: 100%;
+}
+#about .wave {
+  width: 100%;
+  background-color: white;
 }
