@@ -130,4 +130,40 @@ window.addEventListener("load", function () {
       });
     });
   });
+
+  submitButton = document.getElementById("submit-button");
+  submitButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    console.log("tes");
+    const respon = makeRespons();
+    document.body.append(respon);
+
+    close = document.querySelector(".close-respon");
+    close.addEventListener("click", function () {
+      document.body.removeChild(respon);
+    });
+  });
+
+  function makeRespons() {
+    const img = document.createElement("img");
+    img.src = "assets/hutao.png";
+
+    const p = document.createElement("p");
+    p.innerHTML = "Pesan anda terkirim !";
+
+    const responButton = document.createElement("button");
+    responButton.textContent = "OKE";
+    responButton.classList.add("close-respon");
+
+    const textWrapper = document.createElement("div");
+    textWrapper.classList.add("text-wrapper");
+    textWrapper.append(img, p, responButton);
+
+    const responWrapper = document.createElement("div");
+    responWrapper.classList.add("respon-wrapper");
+    responWrapper.append(textWrapper);
+
+    return responWrapper;
+  }
 });
