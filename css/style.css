@@ -812,14 +812,16 @@ footer p {
 
 @media screen and (max-width: 767px) {
   header {
-    /* background-color: #1d3533e8; */
-    padding: 30px 50px;
+    /* background-color: #1e4b4d; */
+    padding: 30px 25px;
     position: fixed;
     width: 100%;
     z-index: 999;
   }
 
   #profile {
+    position: relative;
+    bottom: 120px;
   }
 
   .nav-container {
@@ -1095,12 +1097,16 @@ footer p {
   .form-wrapper .input {
     height: 3.1rem;
     border-radius: 15px;
+    padding-left: 20px;
   }
   .form-wrapper .large-input {
     height: 10rem;
   }
   .form-wrapper .submit {
     height: 2.8rem;
+  }
+  #message-form {
+    gap: 20px;
   }
   .contact-container {
     margin-bottom: 120px;
@@ -1116,9 +1122,11 @@ footer p {
 
   .text-wrapper {
     width: 300px;
+    padding: 20px;
   }
   .text-wrapper p {
     font-size: 0.8rem;
+    margin-bottom: 20px;
   }
 }
 

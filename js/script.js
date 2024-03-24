@@ -123,7 +123,7 @@ window.addEventListener("load", function () {
           iconIndex++;
         });
         if (iconIndex == 0) {
-          header.style.background = "#1d3533e8";
+          header.style.background = "#1e4b4d";
         } else {
           header.style.background = "none";
         }
