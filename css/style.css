@@ -397,7 +397,7 @@ body {
   padding-top: 250px;
 }
 
-.about-me-2-container h3 {
+.about-me-2-container .title {
   margin-bottom: 80px;
   text-shadow: 5px 5px 10px #76abae;
 }
