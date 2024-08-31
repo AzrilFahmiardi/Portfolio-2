@@ -1,36 +1,34 @@
 window.addEventListener("load", function () {
-  const htmlLogo = document.getElementById("html");
-  const cssLogo = document.getElementById("css");
-  const javascriptLogo = document.getElementById("javascript");
-  const cplusLogo = document.getElementById("cplus");
+  const CPlusLogo = document.getElementById("lan1");
+  const jsLogo = document.getElementById("lan2");
+  const pythonLogo = document.getElementById("lan3");
+  const nodeLogo = document.getElementById("lan4");
 
-  htmlLogo.addEventListener("mouseover", function () {
-    this.setAttribute("src", "assets/hmtl.png");
+  nodeLogo.addEventListener("mouseover", function () {
+    this.setAttribute("src", "assets/nodejs.png");
   });
-
-  cssLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/css_BW.png");
+  nodeLogo.addEventListener("mouseout", function () {
+    this.setAttribute("src", "assets/nodejs_BW.png");
   });
-  cssLogo.addEventListener("mouseover", function () {
-    this.setAttribute("src", "assets/css.png");
-  });
-
-  javascriptLogo.addEventListener("mouseout", function () {
+  jsLogo.addEventListener("mouseout", function () {
     this.setAttribute("src", "assets/js_BW.png");
   });
-  javascriptLogo.addEventListener("mouseover", function () {
+  jsLogo.addEventListener("mouseover", function () {
     this.setAttribute("src", "assets/js.png");
   });
 
-  cplusLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/c++_BW.png");
+  pythonLogo.addEventListener("mouseout", function () {
+    this.setAttribute("src", "assets/python_BW.png");
   });
-  cplusLogo.addEventListener("mouseover", function () {
+  pythonLogo.addEventListener("mouseover", function () {
+    this.setAttribute("src", "assets/python.png");
+  });
+  CPlusLogo.addEventListener("mouseover", function () {
     this.setAttribute("src", "assets/c++.png");
   });
 
-  htmlLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/hmtl_BW.png");
+  CPlusLogo.addEventListener("mouseout", function () {
+    this.setAttribute("src", "assets/c++_BW.png");
   });
 
   const slides = document.querySelectorAll(".slide");
