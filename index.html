@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Azril Fahmiardi</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -213,8 +215,8 @@
             <div class="form-wrapper">
               <p class="form-title">Send me a massage</p>
               <form action="" id="message-form">
-                <input type="text" class="input" placeholder="Your Name" required />
-                <input type="email" class="input" placeholder="Your Email" required />
+                <input type="text" class="input" id="name" placeholder="Your Name" required />
+                <input type="email" class="input" id="email" placeholder="Your Email" required />
                 <textarea name="" id="project-details-message" class="input large-input" cols="30" rows="10" placeholder="Details Project" required></textarea>
                 <input type="submit" class="input submit" id="submit-button" value="Send" />
               </form>
@@ -226,7 +228,5 @@
     <footer>
       <p>copyright @2021 Azril Fahmiardi</p>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>

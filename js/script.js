@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
   });
 
   CPlusLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/c++_BW.png");
+    this.setAttribute("src", "assets/c++  _BW.png");
   });
 
   const slides = document.querySelectorAll(".slide");
@@ -129,18 +129,51 @@ window.addEventListener("load", function () {
     });
   });
 
+  (function () {
+    emailjs.init({
+      publicKey: "0__VFXsr9cRsZ1TbO",
+    });
+  })();
+
   submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-    console.log("tes");
-    const respon = makeRespons();
-    document.body.append(respon);
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("project-details-message").value;
 
-    close = document.querySelector(".close-respon");
-    close.addEventListener("click", function () {
-      document.body.removeChild(respon);
-    });
+    emailjs
+      .send("service_fsh1a2b", "template_z138svf", {
+        from_name: name,
+        from_email: email,
+        message: message,
+      })
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+
+          console.log("tes");
+          const respon = makeRespons();
+          document.body.append(respon);
+
+          close = document.querySelector(".close-respon");
+          close.addEventListener("click", function () {
+            document.body.removeChild(respon);
+          });
+          document.getElementById("message-form").reset();
+        },
+        function (error) {
+          console.log("FAILED...", error);
+
+          Swal.fire({
+            icon: "error",
+            title: "opps...",
+            text: "Message failed to send. Please try again",
+            showConfirmButton: true,
+          });
+        }
+      );
   });
 
   function makeRespons() {
