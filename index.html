@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Azril Fahmiardi</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/script.js"></script>
   </head>
@@ -78,7 +80,7 @@
               d="M0,0L24,8.7C48,17,96,35,144,60.7C192,87,240,121,288,143C336,165,384,173,432,151.7C480,130,528,78,576,78C624,78,672,130,720,151.7C768,173,816,165,864,169C912,173,960,191,1008,186.3C1056,182,1104,156,1152,130C1200,104,1248,78,1296,60.7C1344,43,1392,35,1440,43.3C1488,52,1536,78,1584,86.7C1632,95,1680,87,1728,78C1776,69,1824,61,1872,52C1920,43,1968,35,2016,47.7C2064,61,2112,95,2160,99.7C2208,104,2256,78,2304,56.3C2352,35,2400,17,2448,26C2496,35,2544,69,2592,91C2640,113,2688,121,2736,125.7C2784,130,2832,130,2880,121.3C2928,113,2976,95,3024,82.3C3072,69,3120,61,3168,86.7C3216,113,3264,173,3312,164.7C3360,156,3408,78,3432,39L3456,0L3456,260L3432,260C3408,260,3360,260,3312,260C3264,260,3216,260,3168,260C3120,260,3072,260,3024,260C2976,260,2928,260,2880,260C2832,260,2784,260,2736,260C2688,260,2640,260,2592,260C2544,260,2496,260,2448,260C2400,260,2352,260,2304,260C2256,260,2208,260,2160,260C2112,260,2064,260,2016,260C1968,260,1920,260,1872,260C1824,260,1776,260,1728,260C1680,260,1632,260,1584,260C1536,260,1488,260,1440,260C1392,260,1344,260,1296,260C1248,260,1200,260,1152,260C1104,260,1056,260,1008,260C960,260,912,260,864,260C816,260,768,260,720,260C672,260,624,260,576,260C528,260,480,260,432,260C384,260,336,260,288,260C240,260,192,260,144,260C96,260,48,260,24,260L0,260Z"
             ></path>
           </svg>
-          <div class="about-me-container" id="aboutme">
+          <div class="about-me-container" id="aboutme" data-aos="fade-up">
             <div class="desc">
               <h2 class="title">ABOUT ME</h2>
               <p class="text">
@@ -106,24 +108,24 @@
             <div class="skills" id="my-skills">
               <h2 class="title">MY SKILLS</h2>
               <div class="skill-container">
-                <div class="skill-box"><img id="lan1" src="assets/c++_BW.png" alt="" /></div>
-                <div class="skill-box"><img id="lan2" src="assets/js_BW.png" alt="" /></div>
-                <div class="skill-box"><img id="lan3" src="assets/python_BW.png" alt="" /></div>
-                <div class="skill-box"><img id="lan4" src="assets/nodejs_BW.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="0"><img id="lan1" src="assets/c++_BW.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="100"><img id="lan2" src="assets/js_BW.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="200"><img id="lan3" src="assets/python_BW.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="300"><img id="lan4" src="assets/nodejs_BW.png" alt="" /></div>
               </div>
             </div>
             <div class="certificate" id="certificate">
               <h2 class="title">CERTIFICATE</h2>
               <div class="certif-area">
-                <div class="certif-list">
+                <div class="certif-list" data-aos="fade-right" data-aos-delay="0">
                   <p class="certif-title">System Analyst</p>
                   <p class="certif-source">BNSP</p>
                 </div>
-                <div class="certif-list">
+                <div class="certif-list" data-aos="fade-right" data-aos-delay="100">
                   <p class="certif-title">Software Enginering Fundamental Course</p>
                   <p class="certif-source">RevoU</p>
                 </div>
-                <div class="certif-list">
+                <div class="certif-list" data-aos="fade-right" data-aos-delay="200">
                   <p class="certif-title">Belajar Dasar Pemrograman Javascript</p>
                   <p class="certif-source">Dicoding</p>
                 </div>
@@ -136,7 +138,7 @@
             <h2 class="title">PORTFOLIO</h2>
             <p class="name">My Latest Project</p>
             <div class="project">
-              <div class="project-list">
+              <div class="project-list" data-aos="fade-right">
                 <div class="project-img">
                   <img src="assets/bookshlef1.png" alt="" />
                   <div class="project-overlay">
@@ -149,7 +151,7 @@
                   <a class="read-more" target="_blank" href="https://github.com/AzrilFahmiardi/Bookshelf">Read More</a>
                 </div>
               </div>
-              <div class="project-list">
+              <div class="project-list" data-aos="fade-left">
                 <div class="project-img">
                   <img src="assets/todo1.png" alt="" />
                   <div class="project-overlay">
@@ -162,7 +164,7 @@
                   <a class="read-more" target="_blank" href="https://github.com/AzrilFahmiardi/Todo-App">Read More</a>
                 </div>
               </div>
-              <div class="project-list">
+              <div class="project-list" data-aos="fade-up">
                 <div class="project-img">
                   <img src="assets/ajin-academy1.png" alt="" />
                   <div class="project-overlay">
@@ -228,5 +230,10 @@
     <footer>
       <p>copyright @2021 Azril Fahmiardi</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
+
 </html>
