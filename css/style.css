@@ -408,6 +408,9 @@ body {
 
 .skill-container {
   width: 500px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -415,6 +418,25 @@ body {
   gap: 30px;
   padding: 10px;
   margin-left: 10px;
+}
+
+/* Custom scrollbar styles */
+.skill-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.skill-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.skill-container::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
+}
+
+.skill-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .skill-container .skill-box {
@@ -436,10 +458,15 @@ body {
 .skill-container img {
   width: 100px;
   line-height: 150px;
-}
+  transform: scale(0.8);
+  transition: 0.1s ease-in-out;
 
-.skill-container img {
-  transition: 0.3s ease-in-out;
+}
+.skill-container img:hover {
+
+  transform: scale(1);
+
+
 }
 
 .certificate {
@@ -485,11 +512,35 @@ body {
 .project {
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   flex-direction: row;
   gap: 50px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  padding-bottom: 30px; /* Add padding to create space between cards and scrollbar */
 }
+
+/* Custom scrollbar styles */
+.project::-webkit-scrollbar {
+  height: 5px; /* Smaller height for the scrollbar */
+}
+
+.project::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.project::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
+}
+
+.project::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .porto-container .title {
   color: #030637;
   font-weight: 700;
@@ -508,7 +559,7 @@ body {
   text-shadow: 0px 0px 20px #030637;
 }
 .project-list {
-  position: relative;
+  flex: 0 0 auto;
   width: 350px;
   height: 250px;
   background-color: white;

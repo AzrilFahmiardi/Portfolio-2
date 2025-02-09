@@ -108,10 +108,16 @@
             <div class="skills" id="my-skills">
               <h2 class="title">MY SKILLS</h2>
               <div class="skill-container">
-                <div class="skill-box" data-aos="fade-up"  data-aos-delay="0"><img id="lan1" src="assets/c++_BW.png" alt="" /></div>
-                <div class="skill-box" data-aos="fade-up"  data-aos-delay="100"><img id="lan2" src="assets/js_BW.png" alt="" /></div>
-                <div class="skill-box" data-aos="fade-up"  data-aos-delay="200"><img id="lan3" src="assets/python_BW.png" alt="" /></div>
-                <div class="skill-box" data-aos="fade-up"  data-aos-delay="300"><img id="lan4" src="assets/nodejs_BW.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="0"><img id="lan1" src="assets/react2.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="100"><img id="lan2" src="assets/nodejs.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="200"><img id="lan3" src="assets/python.png" alt="" /></div>
+                <div class="skill-box" data-aos="fade-up"  data-aos-delay="300"><img id="lan4" src="assets/laravel.png" alt="" /></div>
+                <div class="skill-box"   data-aos-delay="300"><img id="lan4" src="assets/js.png" alt="" /></div>
+                <div class="skill-box"   data-aos-delay="300"><img id="lan4" src="assets/sql.png" alt="" /></div>
+                <div class="skill-box"   data-aos-delay="300"><img id="lan4" src="assets/opencv.png" alt="" /></div>
+                <div class="skill-box"   data-aos-delay="300"><img id="lan4" src="assets/c++.png" alt="" /></div>
+                <div class="skill-box"   data-aos-delay="300"><img id="lan4" src="assets/tailwind.png" alt="" /></div>
+                <div class="skill-box"   data-aos-delay="300"><img id="lan4" src="assets/git.png" alt="" /></div>
               </div>
             </div>
             <div class="certificate" id="certificate">
@@ -137,46 +143,8 @@
           <div class="porto-container">
             <h2 class="title">PORTFOLIO</h2>
             <p class="name">My Latest Project</p>
-            <div class="project">
-              <div class="project-list" data-aos="fade-right">
-                <div class="project-img">
-                  <img src="assets/bookshlef1.png" alt="" />
-                  <div class="project-overlay">
-                    <a class="icon" target="_blank" href="https://azrilfahmiardi.github.io/Bookshelf/"><img src="assets/link.svg" alt="" /></a>
-                    <span class="icon zoom-icon"><img src="assets/search.svg" alt="" /></span>
-                  </div>
-                </div>
-                <div class="project-desc">
-                  <p class="project-title">Bookshelf</p>
-                  <a class="read-more" target="_blank" href="https://github.com/AzrilFahmiardi/Bookshelf">Read More</a>
-                </div>
-              </div>
-              <div class="project-list" data-aos="fade-left">
-                <div class="project-img">
-                  <img src="assets/todo1.png" alt="" />
-                  <div class="project-overlay">
-                    <a class="icon" target="_blank" href="https://azrilfahmiardi.github.io/Todo-App/"><img src="assets/link.svg" alt="" /></a>
-                    <span class="icon zoom-icon"><img src="assets/search.svg" alt="" /></span>
-                  </div>
-                </div>
-                <div class="project-desc">
-                  <p class="project-title">Todo App</p>
-                  <a class="read-more" target="_blank" href="https://github.com/AzrilFahmiardi/Todo-App">Read More</a>
-                </div>
-              </div>
-              <div class="project-list" data-aos="fade-up">
-                <div class="project-img">
-                  <img src="assets/ajin-academy1.png" alt="" />
-                  <div class="project-overlay">
-                    <a class="icon" target="_blank" href="https://azrilfahmiardi.github.io/Ajin-Academy/"><img src="assets/link.svg" alt="" /></a>
-                    <span class="icon zoom-icon"><img src="assets/search.svg" alt="" /></span>
-                  </div>
-                </div>
-                <div class="project-desc">
-                  <p class="project-title">Ajin Academy</p>
-                  <a class="read-more" target="_blank" href="https://github.com/AzrilFahmiardi/Ajin-Academy">Read More</a>
-                </div>
-              </div>
+            <div class="project" id="project-container">
+              <!-- Projects will be dynamically loaded here -->
             </div>
           </div>
           <svg id="wave" style="transform: rotate(0deg); transition: 0.3s" viewBox="0 0 1440 320" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -233,6 +201,76 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const projects = [
+        
+        {
+          title: "SIKOLOV",
+          imgSrc: "assets/sikolov.jpg",
+          liveLink: "https://sikolov.com",
+          repoLink: "https://github.com/AzrilFahmiardi/psychiatrist"
+        },
+        {
+          title: "Batam Campus Expo",
+          imgSrc: "assets/bce.jpg",
+          liveLink: "https://batamcampusexpo.com",
+          repoLink: "https://github.com/AzrilFahmiardi/Batam-Campus-Expo-2025"
+        },
+        {
+          title: "Bookshelf",
+          imgSrc: "assets/bookshlef1.png",
+          liveLink: "https://azrilfahmiardi.github.io/Bookshelf/",
+          repoLink: "https://github.com/AzrilFahmiardi/Bookshelf"
+        },
+        {
+          title: "Todo App",
+          imgSrc: "assets/todo1.png",
+          liveLink: "https://azrilfahmiardi.github.io/Todo-App/",
+          repoLink: "https://github.com/AzrilFahmiardi/Todo-App"
+        },
+        {
+          title: "Ajin Academy",
+          imgSrc: "assets/ajin-academy1.png",
+          liveLink: "https://azrilfahmiardi.github.io/Ajin-Academy/",
+          repoLink: "https://github.com/AzrilFahmiardi/Ajin-Academy"
+        }
+      ];
+
+      const projectContainer = document.getElementById('project-container');
+
+      projects.forEach(project => {
+        const projectList = document.createElement('div');
+        projectList.className = 'project-list';
+        projectList.setAttribute('data-aos', 'fade-up');
+
+        projectList.innerHTML = `
+          <div class="project-img">
+            <img src="${project.imgSrc}" alt="${project.title}" />
+            <div class="project-overlay">
+              <a class="icon" target="_blank" href="${project.liveLink}"><img src="assets/link.svg" alt="Live Link" /></a>
+              <span class="icon zoom-icon"><img src="assets/search.svg" alt="Zoom" /></span>
+            </div>
+          </div>
+          <div class="project-desc">
+            <p class="project-title">${project.title}</p>
+            <a class="read-more" target="_blank" href="${project.repoLink}">Read More</a>
+          </div>
+        `;
+
+        projectContainer.appendChild(projectList);
+      });
+
+      // Automatic sliding
+      let scrollAmount = 0;
+      const slideTimer = setInterval(() => {
+        projectContainer.scrollBy({ left: 350, behavior: 'smooth' });
+        scrollAmount += 350;
+        if (scrollAmount >= projectContainer.scrollWidth - projectContainer.clientWidth) {
+          scrollAmount = 0;
+          projectContainer.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+      }, 3000);
     </script>
   </body>
 

@@ -4,32 +4,32 @@ window.addEventListener("load", function () {
   const pythonLogo = document.getElementById("lan3");
   const nodeLogo = document.getElementById("lan4");
 
-  nodeLogo.addEventListener("mouseover", function () {
-    this.setAttribute("src", "assets/nodejs.png");
-  });
-  nodeLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/nodejs_BW.png");
-  });
-  jsLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/js_BW.png");
-  });
-  jsLogo.addEventListener("mouseover", function () {
-    this.setAttribute("src", "assets/js.png");
-  });
+  // nodeLogo.addEventListener("mouseover", function () {
+  //   this.setAttribute("src", "assets/nodejs.png");
+  // });
+  // nodeLogo.addEventListener("mouseout", function () {
+  //   this.setAttribute("src", "assets/nodejs_BW.png");
+  // });
+  // jsLogo.addEventListener("mouseout", function () {
+  //   this.setAttribute("src", "assets/js_BW.png");
+  // });
+  // jsLogo.addEventListener("mouseover", function () {
+  //   this.setAttribute("src", "assets/js.png");
+  // });
 
-  pythonLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/python_BW.png");
-  });
-  pythonLogo.addEventListener("mouseover", function () {
-    this.setAttribute("src", "assets/python.png");
-  });
-  CPlusLogo.addEventListener("mouseover", function () {
-    this.setAttribute("src", "assets/c++.png");
-  });
+  // pythonLogo.addEventListener("mouseout", function () {
+  //   this.setAttribute("src", "assets/python_BW.png");
+  // });
+  // pythonLogo.addEventListener("mouseover", function () {
+  //   this.setAttribute("src", "assets/python.png");
+  // });
+  // CPlusLogo.addEventListener("mouseover", function () {
+  //   this.setAttribute("src", "assets/c++.png");
+  // });
 
-  CPlusLogo.addEventListener("mouseout", function () {
-    this.setAttribute("src", "assets/c++  _BW.png");
-  });
+  // CPlusLogo.addEventListener("mouseout", function () {
+  //   this.setAttribute("src", "assets/c++  _BW.png");
+  // });
 
   const slides = document.querySelectorAll(".slide");
   const btns = document.querySelectorAll(".btn");
@@ -197,4 +197,16 @@ window.addEventListener("load", function () {
 
     return responWrapper;
   }
+
+  const projectContainer = document.getElementById('project-container');
+
+  // Smooth continuous sliding with infinite loop
+  function smoothScroll() {
+    projectContainer.scrollBy({ left: 1, behavior: 'smooth' });
+    if (projectContainer.scrollLeft + projectContainer.clientWidth >= projectContainer.scrollWidth) {
+      projectContainer.scrollTo({ left: 0 });
+    }
+  }
+
+  setInterval(smoothScroll, 20);
 });
