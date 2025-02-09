@@ -200,7 +200,7 @@ window.addEventListener("load", function () {
 
   const projectContainer = document.getElementById('project-container');
 
-  // Smooth continuous sliding with infinite loop
+  // Smooth continuous sliding with infinite loop for larger screens
   function smoothScroll() {
     projectContainer.scrollBy({ left: 1, behavior: 'smooth' });
     if (projectContainer.scrollLeft + projectContainer.clientWidth >= projectContainer.scrollWidth) {
@@ -208,5 +208,7 @@ window.addEventListener("load", function () {
     }
   }
 
-  setInterval(smoothScroll, 20);
+  if (window.innerWidth >= 768) {
+    setInterval(smoothScroll, 20);
+  }
 });

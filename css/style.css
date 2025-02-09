@@ -1056,31 +1056,74 @@ footer p {
 
   .about-me-2-container .skills {
     margin-left: 0;
-  }
-  .skill-container {
-    margin-left: 0;
-  }
-
-  .about-me-2-container .skills {
-    width: 100%;
-    margin: 0 auto;
-    height: 700px;
-  }
-  .skill-container {
-    width: 60px;
-    height: 80px;
+    padding-top: 50px;
   }
 
   .skill-container {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 10px;
   }
-  .skill-container img {
-    width: 75%;
-  }
+
   .skill-container .skill-box {
-    width: 40%;
+    width: 45%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
   }
+
+  .skill-container img {
+    width: 70px;
+    transition: 0.1s ease-in-out;
+  }
+
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .project-list {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .project-list img {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .project-desc {
+    padding: 10px;
+  }
+
+  .project-desc .project-title {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .project-list .read-more {
+    position: static;
+    left: 0;
+    bottom: 0;
+    font-size: 0.8rem;
+    border-bottom: none;
+  }
+
+  .project-desc .read-more::before {
+    display: none;
+  }
+
   .about-me-2-container {
     flex-direction: column;
     gap: 300px;
