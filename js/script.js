@@ -211,4 +211,10 @@ window.addEventListener("load", function () {
   if (window.innerWidth >= 768) {
     setInterval(smoothScroll, 20);
   }
+
+  // Add animations to project list items
+  const projectLists = document.querySelectorAll('.project-list');
+  projectLists.forEach((projectList, index) => {
+    projectList.style.animationDelay = `${index * 0.2}s`;
+  });
 });
